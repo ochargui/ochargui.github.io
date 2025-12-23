@@ -1,213 +1,161 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Oumaima CHARGUI— Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oumaima CHARGUI — Portfolio</title>
+<style>
+  /* ========== RESET & BASE ========== */
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background:#0f172a; color:#e5e7eb; line-height:1.6; }
+  a { color:#38bdf8; text-decoration:none; }
+  section { padding:60px 20px; max-width:1000px; margin:auto; }
+  h2 { font-size:2rem; border-left:4px solid #38bdf8; padding-left:15px; margin-bottom:30px; }
+  .container { max-width:1100px; margin:auto; }
 
-  <style>
-    :root {
-      --bg: #020617;
-      --card: #020617;
-      --text: #e5e7eb;
-      --muted: #94a3b8;
-      --accent: #38bdf8;
-      --border: #1e293b;
-    }
+  /* ========== HEADER ========== */
+  header { text-align:center; padding:100px 20px; background: radial-gradient(circle at top, #0f172a, #020617); }
+  header h1 { font-size:3rem; margin-bottom:10px; }
+  header p { font-size:1.2rem; color:#94a3b8; }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  /* ========== CARDS ========== */
+  .card { background:#020617; border:1px solid #1e293b; border-radius:16px; padding:24px; margin-bottom:20px; transition: transform .3s, box-shadow .3s; }
+  .card:hover { transform: translateY(-6px); box-shadow:0 20px 40px rgba(0,0,0,.6); }
+  .card h3 { margin-bottom:10px; color:#38bdf8; }
+  .card p { color:#94a3b8; font-size:0.95rem; }
+  .tags { margin-top:15px; }
+  .tag { display:inline-block; padding:6px 12px; margin:5px 5px 0 0; border-radius:999px; font-size:0.75rem; background:#0f172a; border:1px solid #1e293b; color:#38bdf8; }
 
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      background: linear-gradient(180deg, #020617, #020617);
-      color: var(--text);
-      line-height: 1.6;
-    }
+  /* ========== GRID LAYOUT ========== */
+  .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:24px; }
 
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    header {
-      padding: 100px 20px 60px;
-      text-align: center;
-      background: radial-gradient(circle at top, #0f172a, #020617);
-    }
-
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-      letter-spacing: -1px;
-    }
-
-    header p {
-      color: var(--muted);
-      font-size: 1.2rem;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 60px 20px;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 30px;
-      border-left: 4px solid var(--accent);
-      padding-left: 15px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 24px;
-    }
-
-    .card {
-      background: linear-gradient(180deg, #020617, #020617);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px;
-      transition: transform .3s, box-shadow .3s;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 40px rgba(0,0,0,.6);
-    }
-
-    .card h3 {
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .tags {
-      margin-top: 15px;
-    }
-
-    .tag {
-      display: inline-block;
-      padding: 6px 12px;
-      margin: 5px 5px 0 0;
-      border-radius: 999px;
-      font-size: 0.75rem;
-      background: #0f172a;
-      border: 1px solid var(--border);
-      color: var(--accent);
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      color: var(--muted);
-      font-size: 0.9rem;
-      border-top: 1px solid var(--border);
-    }
-  </style>
+  /* ========== FOOTER ========== */
+  footer { text-align:center; padding:40px 20px; color:#94a3b8; font-size:0.9rem; border-top:1px solid #1e293b; }
+</style>
 </head>
-
 <body>
 
 <header>
-  <h1>Ton Nom</h1>
-  <p>Développeur Web • Frontend / Backend</p>
+  <h1>Oumaima CHARGUI</h1>
+  <p>Ingénieure Logiciel – Développement Web & Data</p>
 </header>
 
 <div class="container">
 
+  <!-- À propos -->
   <section>
-    <h2>À propos</h2>
+    <h2>Profil</h2>
     <div class="card">
       <p>
-        Ingénieure en génie logiciel avec des expériences en développement full-stack et en architecture de données.  
-      Passionnée par la Data et l’Intelligence Artificielle, je souhaite évoluer vers le rôle de <strong>Data Engineer</strong>, 
-      en mettant à profit mes compétences en bases de données, backend, pipelines de données et automatisation.
-    </p>
+        Ingénieure en génie logiciel avec des expériences en développement full-stack et en architecture de données. 
+        Passionnée par la Data et l’Intelligence Artificielle, je souhaite évoluer vers le rôle de <strong>Data Engineer</strong>, 
+        en mettant à profit mes compétences en bases de données, backend, pipelines de données et automatisation.
+        <br><br>
+        Motivée pour intégrer des projets Data & AI en alternance, et développer mes compétences en Cloud, Big Data et pipelines ETL/ELT.
       </p>
     </div>
   </section>
 
+  <!-- Expériences -->
   <section>
-    <h2>Compétences</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Frontend</h3>
-        <div class="tags">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">Angular</span>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>Backend</h3>
-        <div class="tags">
-          <span class="tag">.Net</span>
-          <span class="tag">C#</span>
-          <span class="tag">API REST</span>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>Outils</h3>
-        <div class="tags">
-          <span class="tag">Git</span>
-          <span class="tag">GitHub</span>
-          <span class="tag">Linux</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Projets</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Projet Portfolio</h3>
-        <p>Site personnel moderne avec GitHub Pages.</p>
-        <div class="tags">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>Application Web</h3>
-        <p>Application full-stack avec authentification.</p>
-        <div class="tags">
-          <span class="tag">JavaScript</span>
-          <span class="tag">API</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
+    <h2>Expériences professionnelles</h2>
     <div class="card">
-      <p>Email : contact.oumaimadev@gmail.com</p>
-      <p>GitHub : <a href="https://github.com/tonpseudo">https://github.com/ochargui</a></p>
-      <p>LinkedIn : <a href="#">https://www.linkedin.com/in/oumaima-c-2abb87199/</a></p>
+      <h3>Développeuse Web – Projet E-commerce</h3>
+      <p><em>Septembre 2024 – Aujourd’hui</em></p>
+      <ul>
+        <li>Conception et développement d’un site e-commerce performant avec Shopify.</li>
+        <li>Gestion catalogue, paiement sécurisé et parcours client automatisé.</li>
+        <li>Structuration des données clients et transactions pour optimiser le reporting.</li>
+        <li>Optimisation UX/UI et suivi produit.</li>
+        <li>Automatisation des flux de données.</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Shopify</span>
+        <span class="tag">Liquid</span>
+        <span class="tag">HTML/CSS</span>
+        <span class="tag">SQL</span>
+        <span class="tag">UX/UI</span>
+        <span class="tag">Automatisation</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Développeur Full Stack & QA – ADDINN</h3>
+      <p><em>Fév 2021 – Sept 2024</em></p>
+      <ul>
+        <li>Conception et manipulation de la base PostgreSQL.</li>
+        <li>Développement full stack Angular 11 & C#/.NET 5.</li>
+        <li>Documentation et développement d’API REST robustes.</li>
+        <li>Participation aux cérémonies Scrum et gestion du code via GitLab.</li>
+        <li>Mise en place de processus automatisés pour les données.</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">.NET 5</span>
+        <span class="tag">Angular 11</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">GitLab</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">PrimeNG</span>
+        <span class="tag">Swagger</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Développeuse Web – SESAME (Stage)</h3>
+      <p><em>Juin – Septembre 2020</em></p>
+      <ul>
+        <li>Développement d’une application de gestion d’événements (.NET Core, Angular).</li>
+        <li>Gestion inscriptions, calendrier et données utilisateurs.</li>
+        <li>Conception UML et documentation technique.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Développeuse Web – IRESA (Stage de fin d’études)</h3>
+      <p><em>Jan – Juin 2019</em></p>
+      <ul>
+        <li>Développement full stack pour suivi d’évaluations de projets de recherche agricole.</li>
+        <li>Réalisation de rapports de suivi et contribution au reporting.</li>
+        <li>Rédaction de spécifications fonctionnelles et techniques.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Formation -->
+  <section>
+    <h2>Formation</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Diplôme d’Ingénieure en Informatique – Génie Logiciel</h3>
+        <p>2022</p>
+      </div>
+      <div class="card">
+        <h3>Licence Appliquée en Informatique – Multimédia & Développement Web</h3>
+        <p>2018</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section>
+    <h2>Certifications</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Scrum Foundation Professional Certificate (SFPC) – CertiProf</h3>
+        <p>2021</p>
+      </div>
+      <div class="card">
+        <h3>Certificat en HTML & JavaScript – SoloLearn</h3>
+        <p>2020</p>
+      </div>
     </div>
   </section>
 
 </div>
 
 <footer>
-  © 2025 — oumaima chargui
+  © 2025 — Oumaima CHARGUI | <a href="mailto:tonemail@gmail.com">tonemail@gmail.com</a>
 </footer>
 
 </body>
 </html>
-Initial portfolio
