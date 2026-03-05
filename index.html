@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Oumaima Chargui | Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -29,13 +31,6 @@ text-align:center;
 background:linear-gradient(135deg,#1e293b,#0f172a);
 }
 
-header img{
-width:130px;
-border-radius:50%;
-margin-bottom:20px;
-border:3px solid #38bdf8;
-}
-
 header h1{
 font-size:46px;
 margin-bottom:10px;
@@ -46,16 +41,25 @@ font-size:20px;
 color:#cbd5f5;
 }
 
+.buttons{
+margin-top:25px;
+}
+
 .btn{
 display:inline-block;
-margin-top:20px;
 padding:12px 25px;
+margin:10px;
 background:#38bdf8;
 color:#000;
 text-decoration:none;
 border-radius:25px;
 font-weight:bold;
-margin-right:10px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#0ea5e9;
+transform:scale(1.05);
 }
 
 nav{
@@ -139,23 +143,30 @@ margin-top:40px;
 
 <header>
 
-<img src="profile.jpg" alt="Photo Oumaima">
-
 <h1>Oumaima Chargui</h1>
 <p>Ingénieure Logiciel | Développeuse Web & QA</p>
 <p>Paris • 3 ans d'expérience</p>
 
-<a class="btn" href="#contact">Me contacter</a>
-<a class="btn" href="cv-oumaima-chargui.pdf">Télécharger CV</a>
+<div class="buttons">
+
+<a class="btn" href="#contact">📧 Me contacter</a>
+
+<a class="btn" href="CV_OC26.pdf" target="_blank">
+📄 Télécharger mon CV
+</a>
+
+</div>
 
 </header>
 
 <nav>
+
 <a href="#about">Profil</a>
 <a href="#skills">Compétences</a>
 <a href="#projects">Projets</a>
 <a href="#experience">Expérience</a>
 <a href="#contact">Contact</a>
+
 </nav>
 
 <section id="about">
@@ -163,16 +174,17 @@ margin-top:40px;
 <h2>À propos de moi</h2>
 
 <div class="card">
+
 <p>
-Ingénieure en génie logiciel avec plus de 3 ans d’expérience en développement web full-stack
-et assurance qualité.
 
-Spécialisée dans les technologies Angular et .NET, je conçois des applications web performantes
-tout en garantissant leur qualité grâce aux tests automatisés.
+Ingénieure en génie logiciel avec plus de 3 ans d’expérience en développement web full-stack et assurance qualité.
 
-Je suis passionnée par la création de solutions innovantes, l’optimisation des performances
-et l’amélioration de l’expérience utilisateur.
+Spécialisée dans les technologies Angular et .NET, je développe des applications web performantes et sécurisées tout en garantissant leur qualité grâce aux tests automatisés.
+
+Je suis passionnée par la création de solutions innovantes, l’optimisation des performances et l’amélioration de l’expérience utilisateur.
+
 </p>
+
 </div>
 
 </section>
@@ -211,27 +223,39 @@ et l’amélioration de l’expérience utilisateur.
 <div class="grid">
 
 <div class="card">
+
 <h3>🛒 Site E-commerce</h3>
+
 <p>
-Développement d’une boutique en ligne avec gestion du catalogue,
-paiement sécurisé et optimisation SEO.
+
+Développement d’une boutique en ligne avec gestion du catalogue produits, paiement sécurisé et optimisation SEO.
+
 </p>
+
 </div>
 
 <div class="card">
+
 <h3>⚙️ API REST .NET</h3>
+
 <p>
-Développement d’API REST avec .NET 5 et PostgreSQL
-en architecture CQRS.
+
+Développement d’API REST avec .NET 5 et PostgreSQL avec architecture CQRS.
+
 </p>
+
 </div>
 
 <div class="card">
+
 <h3>🧪 Automatisation des tests</h3>
+
 <p>
-Automatisation des tests avec Selenium
-et création de tests unitaires avec xUnit.
+
+Mise en place de tests automatisés avec Selenium WebDriver et création de tests unitaires avec xUnit.
+
 </p>
+
 </div>
 
 </div>
@@ -243,17 +267,25 @@ et création de tests unitaires avec xUnit.
 <h2>Expérience Professionnelle</h2>
 
 <div class="card">
+
 <h3>Développeuse Full Stack & QA</h3>
+
 <p>ADDINN | 2022 – 2024</p>
-<p>Développement API REST .NET, Angular, tests unitaires et automatisés.</p>
+
+<p>Développement d’API REST avec .NET, interfaces Angular et automatisation des tests.</p>
+
 </div>
 
 <br>
 
 <div class="card">
+
 <h3>Développeuse Web – E-commerce</h3>
+
 <p>2024 – 2025</p>
-<p>Création et gestion d’une boutique Shopify avec optimisation SEO.</p>
+
+<p>Création et gestion d’une boutique Shopify avec optimisation SEO et UX.</p>
+
 </div>
 
 </section>
@@ -264,19 +296,29 @@ et création de tests unitaires avec xUnit.
 
 <div class="card contact">
 
-<p>📧 Email : <a href="mailto:contact.oumaimadev@gmail.com">contact.oumaimadev@gmail.com</a></p>
+<p>📧 Email :
+<a href="mailto:contact.oumaimadev@gmail.com">
+contact.oumaimadev@gmail.com
+</a>
+</p>
 
 <p>📍 Paris, France</p>
 
-<p>💻 GitHub : 
+<p>💻 GitHub :
 <a href="https://github.com/ochargui" target="_blank">
 github.com/ochargui
 </a>
 </p>
 
-<p>💼 LinkedIn : 
+<p>💼 LinkedIn :
 <a href="https://www.linkedin.com/in/oumaima-c-2abb87199" target="_blank">
-linkedin.com/oumaima-chargui
+linkedin.com/in/oumaima-c
+</a>
+</p>
+
+<p>📄 CV :
+<a href="cv-oumaima-chargui.pdf" target="_blank">
+Télécharger mon CV
 </a>
 </p>
 
@@ -285,7 +327,9 @@ linkedin.com/oumaima-chargui
 </section>
 
 <footer>
+
 <p>© 2026 Oumaima Chargui | Portfolio</p>
+
 </footer>
 
 </body>
