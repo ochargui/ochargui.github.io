@@ -20,6 +20,7 @@ body{
 background:#0f172a;
 color:white;
 line-height:1.6;
+scroll-behavior:smooth;
 }
 
 header{
@@ -28,8 +29,15 @@ text-align:center;
 background:linear-gradient(135deg,#1e293b,#0f172a);
 }
 
+header img{
+width:130px;
+border-radius:50%;
+margin-bottom:20px;
+border:3px solid #38bdf8;
+}
+
 header h1{
-font-size:48px;
+font-size:46px;
 margin-bottom:10px;
 }
 
@@ -47,6 +55,7 @@ color:#000;
 text-decoration:none;
 border-radius:25px;
 font-weight:bold;
+margin-right:10px;
 }
 
 nav{
@@ -55,6 +64,7 @@ padding:15px;
 text-align:center;
 position:sticky;
 top:0;
+z-index:100;
 }
 
 nav a{
@@ -62,6 +72,11 @@ color:white;
 margin:0 15px;
 text-decoration:none;
 font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
 }
 
 section{
@@ -90,7 +105,7 @@ transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-5px);
+transform:translateY(-6px);
 background:#334155;
 }
 
@@ -102,6 +117,12 @@ padding:6px 12px;
 border-radius:20px;
 margin:5px;
 font-size:14px;
+font-weight:500;
+}
+
+.contact a{
+color:#38bdf8;
+text-decoration:none;
 }
 
 footer{
@@ -117,11 +138,16 @@ margin-top:40px;
 <body>
 
 <header>
+
+<img src="profile.jpg" alt="Photo Oumaima">
+
 <h1>Oumaima Chargui</h1>
-<p>Ingénieure Logiciel | Développeuse web & QA</p>
+<p>Ingénieure Logiciel | Développeuse Web & QA</p>
 <p>Paris • 3 ans d'expérience</p>
 
 <a class="btn" href="#contact">Me contacter</a>
+<a class="btn" href="cv-oumaima-chargui.pdf">Télécharger CV</a>
+
 </header>
 
 <nav>
@@ -133,22 +159,26 @@ margin-top:40px;
 </nav>
 
 <section id="about">
+
 <h2>À propos de moi</h2>
 
 <div class="card">
 <p>
-Ingénieure en génie logiciel spécialisée en développement web full-stack et assurance qualité.
-J’ai plus de 3 ans d’expérience dans la conception d’applications web avec Angular et .NET
-ainsi que dans l’automatisation des tests avec Selenium.
+Ingénieure en génie logiciel avec plus de 3 ans d’expérience en développement web full-stack
+et assurance qualité.
 
-Je suis passionnée par la création de solutions performantes,
-l’optimisation des applications et l’amélioration de l’expérience utilisateur.
+Spécialisée dans les technologies Angular et .NET, je conçois des applications web performantes
+tout en garantissant leur qualité grâce aux tests automatisés.
+
+Je suis passionnée par la création de solutions innovantes, l’optimisation des performances
+et l’amélioration de l’expérience utilisateur.
 </p>
 </div>
 
 </section>
 
 <section id="skills">
+
 <h2>Compétences Techniques</h2>
 
 <div class="card skills">
@@ -175,6 +205,7 @@ l’optimisation des applications et l’amélioration de l’expérience utilis
 </section>
 
 <section id="projects">
+
 <h2>Projets</h2>
 
 <div class="grid">
@@ -182,7 +213,7 @@ l’optimisation des applications et l’amélioration de l’expérience utilis
 <div class="card">
 <h3>🛒 Site E-commerce</h3>
 <p>
-Développement d’une boutique en ligne avec gestion des produits,
+Développement d’une boutique en ligne avec gestion du catalogue,
 paiement sécurisé et optimisation SEO.
 </p>
 </div>
@@ -191,15 +222,15 @@ paiement sécurisé et optimisation SEO.
 <h3>⚙️ API REST .NET</h3>
 <p>
 Développement d’API REST avec .NET 5 et PostgreSQL
-avec architecture CQRS.
+en architecture CQRS.
 </p>
 </div>
 
 <div class="card">
 <h3>🧪 Automatisation des tests</h3>
 <p>
-Mise en place de tests automatisés avec Selenium
-et tests unitaires avec xUnit.
+Automatisation des tests avec Selenium
+et création de tests unitaires avec xUnit.
 </p>
 </div>
 
@@ -208,6 +239,7 @@ et tests unitaires avec xUnit.
 </section>
 
 <section id="experience">
+
 <h2>Expérience Professionnelle</h2>
 
 <div class="card">
@@ -227,13 +259,27 @@ et tests unitaires avec xUnit.
 </section>
 
 <section id="contact">
+
 <h2>Contact</h2>
 
-<div class="card">
-<p>📧 Email : contact.oumaimadev@gmail.com</p>
+<div class="card contact">
+
+<p>📧 Email : <a href="mailto:contact.oumaimadev@gmail.com">contact.oumaimadev@gmail.com</a></p>
+
 <p>📍 Paris, France</p>
-<p>💻 GitHub : https://github.com/ochargui </p>
-<p>💼 LinkedIn : https://www.linkedin.com/in/oumaima-c-2abb87199</p>
+
+<p>💻 GitHub : 
+<a href="https://github.com/ochargui" target="_blank">
+github.com/ochargui
+</a>
+</p>
+
+<p>💼 LinkedIn : 
+<a href="https://www.linkedin.com/in/oumaima-c-2abb87199" target="_blank">
+linkedin.com/oumaima-chargui
+</a>
+</p>
+
 </div>
 
 </section>
