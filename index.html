@@ -5,109 +5,204 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Oumaima Chargui | Portfolio</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+}
+
 body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#f4f4f4;
-    color:#333;
+background:#0f172a;
+color:white;
+line-height:1.6;
 }
 
 header{
-    background:#0f172a;
-    color:white;
-    padding:40px;
-    text-align:center;
+padding:80px 20px;
+text-align:center;
+background:linear-gradient(135deg,#1e293b,#0f172a);
+}
+
+header h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:20px;
+color:#cbd5f5;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#38bdf8;
+color:#000;
+text-decoration:none;
+border-radius:25px;
+font-weight:bold;
 }
 
 nav{
-    background:#1e293b;
-    padding:10px;
-    text-align:center;
+background:#020617;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
 }
 
 nav a{
-    color:white;
-    margin:0 15px;
-    text-decoration:none;
-    font-weight:bold;
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:500;
 }
 
 section{
-    padding:40px;
-    max-width:1000px;
-    margin:auto;
+padding:60px 20px;
+max-width:1100px;
+margin:auto;
 }
 
 h2{
-    color:#0f172a;
+text-align:center;
+margin-bottom:40px;
+font-size:32px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
 .card{
-    background:white;
-    padding:20px;
-    margin:15px 0;
-    border-radius:8px;
-    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+background:#1e293b;
+padding:25px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+background:#334155;
+}
+
+.skills span{
+display:inline-block;
+background:#38bdf8;
+color:black;
+padding:6px 12px;
+border-radius:20px;
+margin:5px;
+font-size:14px;
 }
 
 footer{
-    text-align:center;
-    padding:20px;
-    background:#0f172a;
-    color:white;
+text-align:center;
+padding:30px;
+background:#020617;
+margin-top:40px;
 }
-</style>
 
+</style>
 </head>
 
 <body>
 
 <header>
 <h1>Oumaima Chargui</h1>
-<p>Ingénieure en Informatique | Développement Web & QA</p>
-<p>📍 Paris | 📧 contact.oumaimadev@gmail.com</p>
+<p>Ingénieure Logiciel | Développeuse Full-Stack & QA</p>
+<p>Paris • 3 ans d'expérience</p>
+
+<a class="btn" href="#contact">Me contacter</a>
 </header>
 
 <nav>
-<a href="#profil">Profil</a>
-<a href="#competences">Compétences</a>
+<a href="#about">Profil</a>
+<a href="#skills">Compétences</a>
+<a href="#projects">Projets</a>
 <a href="#experience">Expérience</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<section id="profil">
-<h2>Profil</h2>
+<section id="about">
+<h2>À propos de moi</h2>
+
 <div class="card">
 <p>
-Ingénieure en génie logiciel avec 3 ans d’expérience en développement web full-stack et QA.
-Passionnée par la création d’applications web performantes et les solutions e-commerce.
-Expérience en Angular, .NET, API REST et automatisation des tests.
+Ingénieure en génie logiciel spécialisée en développement web full-stack et assurance qualité.
+J’ai plus de 3 ans d’expérience dans la conception d’applications web avec Angular et .NET
+ainsi que dans l’automatisation des tests avec Selenium.
+
+Je suis passionnée par la création de solutions performantes,
+l’optimisation des applications et l’amélioration de l’expérience utilisateur.
 </p>
 </div>
+
 </section>
 
-<section id="competences">
-<h2>Compétences</h2>
+<section id="skills">
+<h2>Compétences Techniques</h2>
+
+<div class="card skills">
+
+<span>C#</span>
+<span>.NET</span>
+<span>Angular</span>
+<span>TypeScript</span>
+<span>JavaScript</span>
+<span>Python</span>
+<span>Java</span>
+<span>HTML</span>
+<span>CSS</span>
+<span>PostgreSQL</span>
+<span>MySQL</span>
+<span>Selenium</span>
+<span>xUnit</span>
+<span>Postman</span>
+<span>Git</span>
+<span>Agile Scrum</span>
+
+</div>
+
+</section>
+
+<section id="projects">
+<h2>Projets</h2>
+
+<div class="grid">
 
 <div class="card">
-<h3>Langages</h3>
-<p>C#, Java, Python, TypeScript, JavaScript</p>
+<h3>🛒 Site E-commerce</h3>
+<p>
+Développement d’une boutique en ligne avec gestion des produits,
+paiement sécurisé et optimisation SEO.
+</p>
 </div>
 
 <div class="card">
-<h3>Technologies Web</h3>
-<p>Angular, HTML5, CSS3, Node.js, .NET Core</p>
+<h3>⚙️ API REST .NET</h3>
+<p>
+Développement d’API REST avec .NET 5 et PostgreSQL
+avec architecture CQRS.
+</p>
 </div>
 
 <div class="card">
-<h3>Base de données</h3>
-<p>PostgreSQL, MySQL, SQL Server, Oracle</p>
+<h3>🧪 Automatisation des tests</h3>
+<p>
+Mise en place de tests automatisés avec Selenium
+et tests unitaires avec xUnit.
+</p>
 </div>
 
-<div class="card">
-<h3>Tests & QA</h3>
-<p>Selenium, xUnit, Postman, tests fonctionnels</p>
 </div>
 
 </section>
@@ -116,20 +211,17 @@ Expérience en Angular, .NET, API REST et automatisation des tests.
 <h2>Expérience Professionnelle</h2>
 
 <div class="card">
-<h3>Développeuse Web – Projet E-commerce</h3>
+<h3>Développeuse Full Stack & QA</h3>
+<p>ADDINN | 2022 – 2024</p>
+<p>Développement API REST .NET, Angular, tests unitaires et automatisés.</p>
+</div>
+
+<br>
+
+<div class="card">
+<h3>Développeuse Web – E-commerce</h3>
 <p>2024 – 2025</p>
-<p>Développement d’un site e-commerce avec Shopify, optimisation SEO et gestion du catalogue produits.</p>
-</div>
-
-<div class="card">
-<h3>Développeuse Full Stack & QA – ADDINN</h3>
-<p>2022 – 2024</p>
-<p>Développement d’API REST avec .NET et interfaces Angular, tests unitaires avec xUnit et automatisation Selenium.</p>
-</div>
-
-<div class="card">
-<h3>Développeuse Web – Stages</h3>
-<p>Développement d’applications web avec Angular, Java Spring Boot et .NET Core.</p>
+<p>Création et gestion d’une boutique Shopify avec optimisation SEO.</p>
 </div>
 
 </section>
@@ -138,9 +230,10 @@ Expérience en Angular, .NET, API REST et automatisation des tests.
 <h2>Contact</h2>
 
 <div class="card">
-<p>Email : contact.oumaimadev@gmail.com</p>
-<p>LinkedIn : ajouter ton lien</p>
-<p>GitHub : ajouter ton lien GitHub</p>
+<p>📧 Email : contact.oumaimadev@gmail.com</p>
+<p>📍 Paris, France</p>
+<p>💻 GitHub : ajouter ton lien</p>
+<p>💼 LinkedIn : ajouter ton lien</p>
 </div>
 
 </section>
